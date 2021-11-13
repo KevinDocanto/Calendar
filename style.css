@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-weight: bold;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.hour {
+  font-size: 0.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+#time {
+  margin-left: 60px;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 5px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#save {
+  background-color: #008cba; /* Save button */
+}
+
+#save:hover {
+  background-color: #107191;
+}
+
+#clear {
+  background-color: #f44336;
+}
+
+#clear:hover {
+  background-color: #d1453b;
+}
+
+.row:nth-child(7),
+.row-week:nth-child(7),
+.last-day {
+  border-right: solid black 3px;
+}
+
+.container {
+  margin: 0 auto;
+  font-size: 0;
+  text-align: center;
+}
+.row {
+  position: relative;
+  font-size: 1.5rem;
+  width: 13vw;
+  height: 150px;
+  display: inline-block;
+  border: solid black 3px;
+  border-top: none;
+  border-right: none;
+  vertical-align: top;
+  text-align: left;
+  cursor: pointer;
+}
+
+.row:hover {
+  background-color: rgb(187, 187, 187);
+}
+
+.weekday {
+  height: 40px;
+  line-height: 40px;
+  border-top: solid black 3px;
+  text-align: center;
+}
+
+.empty {
+  pointer-events: none;
+}
+
+.mark {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: red;
+}
+
+.mark h1 {
+  font-size: 8vmax;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  margin-bottom: 100px;
+}
