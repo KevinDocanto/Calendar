@@ -3,6 +3,7 @@ const text = document.getElementById("time");
 
 // Highlights today's day to lightgray.
 function getDay() {
+  console.log(date.getDate());
   return (day[date.getDate() - 1].style.backgroundColor = "lightgray");
 }
 
